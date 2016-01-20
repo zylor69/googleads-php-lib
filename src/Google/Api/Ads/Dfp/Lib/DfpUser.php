@@ -111,7 +111,7 @@ class DfpUser extends AdsUser {
     $defaultServer = $apiProps['api.server'];
 
     if ($authenticationIniPath === null) {
-      $authenticationIniPath = dirname(__FILE__) . '/../auth.ini';
+      $authenticationIniPath = '/home/plan/current/app/config/auth_dfp.ini';
     }
     $authenticationIni =
         parse_ini_file(realpath($authenticationIniPath), true);
